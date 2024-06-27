@@ -1,0 +1,124 @@
+*{
+background-color: black;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+flex-wrap: wrap;    
+
+}
+
+body{
+
+font-family: Arial;
+/*display: flex;8 */
+min-height: 80vh;
+justify-content: flex-start;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    color: purple;
+    justify-content: flex-start;
+    border: 1px solid black;
+
+    
+    
+}
+header h1 {
+
+    font-size: 150%;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  
+footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: larger;
+
+    color: purple;
+    margin-top: auto;
+  }
+    
+.row {
+    flex: 4;
+    background-color:black;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.card {
+    border-style: dashed;
+    border-color: white;
+    border-width: 1px;
+    margin: 20px;
+    padding: 10px;
+    
+    transition: all.5s ease;
+    width: 25%;
+    
+  }
+
+.card:hover, .card:hover h2 {
+    box-shadow: 10px 10px 5px #aaaaaa;
+
+}  
+
+.card h2 {
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    font-size: large;
+    position: relative;
+    bottom: 60px;
+    border-radius: 10px 10px 10px 10px;
+    transition: all.5s ease;
+}
+  
+.card p {
+    text-align: center;
+    color: white;
+    font-size: medium;
+    font-style: italic;
+    padding: 10px;
+    
+  }
+   
+.card pre {
+
+    text-align: left;
+    box-sizing: content-box;
+    color:white;
+    background-color: purple;
+    bottom: 20px;
+    font-size: small;
+    padding:5px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  }
+
+@media screen and (max-width: 576px) {
+    main
+     {
+      flex-direction: column;
+    }
+  }  
+
